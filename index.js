@@ -5,7 +5,7 @@ function takeANumber(currentLineOfPeople, newPersonsName) {
 }
 
 function nowServing(currentLineOfPeople) {
-  const firstPerson = currentLineOfPeople[0]
+  const firstPerson = currentLineOfPeople.shift()
   if(firstPerson !== undefined) {
     return(`Currently serving ${firstPerson}.`)
   }
