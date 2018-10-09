@@ -7,7 +7,7 @@ function takeANumber(currentLineOfPeople, newPersonsName) {
 function nowServing(currentLineOfPeople) {
   const firstPerson = currentLineOfPeople[0]
   if(firstPerson !== undefined) {
-    return firstPerson
+    return(`Currently serving ${firstPerson}.`)
   }
   return "There is nobody waiting to be served!"
 }
