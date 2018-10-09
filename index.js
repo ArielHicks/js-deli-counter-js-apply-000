@@ -17,4 +17,5 @@ function currentLine(currentLineOfPeople) {
     const line = currentLineOfPeople.map((person, index) => `${index + 1}. ${person}`).join(`, `)
     return(`The line is currently: ${line}`)
   }
+return "The line is currently empty."
 }
