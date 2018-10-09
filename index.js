@@ -11,3 +11,9 @@ function nowServing(currentLineOfPeople) {
   }
   return "There is nobody waiting to be served!"
 }
+
+function currentLine(currentLineOfPeople) {
+  if(currentLineOfPeople.length) {
+    const line = currentLineOfPeople.map((person, index) => `${index + 1}. ${person}`).join(`, `)
+    return(`The line is currently: ${line}`)
+  }
