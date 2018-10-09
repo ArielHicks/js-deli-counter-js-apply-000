@@ -9,5 +9,5 @@ function nowServing(currentLineOfPeople) {
   if(firstPerson !== undefined) {
     return firstPerson
   }
-    return(`Currently serving ${newPersonsName}.`) 
+  return "There is nobody waiting to be served!"
 }
